@@ -1,0 +1,71 @@
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+hr {
+    height: 5px;
+}
+div.head {
+    background-image: url(img/keyboard-254582_1920.jpg);
+    background-size: cover;
+    height: 500px;
+}
+div.footer {
+    background-color: darkgrey;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+.navbar-brand   {
+    background-size: cover;
+}
+body {
+    line-height: 2;
+    font-size: 16px;
+}
+.white-text {
+    color: gainsboro;
+}
+.white-text a{
+    color: gainsboro;
+}
+.fa-about   {
+    color: cornflowerblue;
+    transition: 2s;
+}
+.fa-about:hover {
+    transform: translate(0, -20px) scale(1.5);
+}
+.fa-service {
+    padding-bottom: 15px;
+    color: darkorange;
+}
+.chapter-about {
+    background-color: aliceblue;
+}
+.chapter-service {
+    background-color: #FFFCEB;
+}
+.chapter-price {
+    background-color: #F1FFF0;
+    padding-bottom: 150px;
+}
+.chapter-soft {
+    background-color: aliceblue;
+    padding-bottom: 200px;
+
+}
+h1 {
+    padding-bottom: 20px;
+}
+.img-responsive {
+    max-height: 150px;
+}
+.soft-logo {
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+.soft-logo:hover    {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
