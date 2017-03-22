@@ -129,14 +129,10 @@
                         <img src="img/logo.png" style="width: 100%"/>
                     </div>
                 </div>
-                <div class="fa-location-arrow">
+                <div class="row">
                     <div class="col-md-7 white-text">
                         <b>г. Омск, ул. Куйбышева, 43, офис 639   т. 8(3812)948-775, <a href="mailto:soft@soft-expert.su">soft@soft-expert.su</a></b>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-2"></div>
                 </div>
             </div>
         </div>

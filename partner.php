@@ -1,9 +1,11 @@
 <?php session_start();
-    if (isset($_SESSION['username'])) {
-        $partner_url = 'href="partner.php"';
-    } else {
-        $partner_url =  'href="#myModal" data-toggle="modal"';
-    }
+if (isset($_SESSION['username'])) {
+    $partner_url = 'partner.php';
+    $partner_modal = '#';
+} else {
+    $partner_url =  '#myModal';
+    $partner_modal = 'modal';
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,7 +54,7 @@
                         <li><a href="index.php#chapter-service" onclick='$("div.service").scrollToMe(-40)'>Услуги</a></li>
                         <li><a href="index.php#chapter-price" onclick='$("div.chapter-price").scrollToMe(-50)'>Цены</a></li>
                         <li><a href="index.php#chapter-soft" onclick='$("div.chapter-soft").scrollToMe()'>Продажа ПО</a></li>
-                        <li><a  <?php echo $partner_url; ?>>Партнерам</a></li>
+                        <li><a href="<?= htmlspecialchars($partner_url); ?>" data-toggle="<?= $partner_modal; ?>">Партнерам</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
@@ -125,14 +127,11 @@
                     <div class="col-md-6 logo hidden-xs">
                         <img src="img/logo.png" style="width: 100%"/>
                     </div>
-                    <div class="col-md-2"></div>
-                    <div class="col-md-4 white-text">
-                        г. Омск, ул. Куйбышева, 43, офис 639 </br>  т. 8(3812)948-775,</br> <a href="mailto:soft@soft-expert.su">soft@soft-expert.su</a>
-                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-2"></div>
+                    <div class="col-md-7 white-text">
+                        <b>г. Омск, ул. Куйбышева, 43, офис 639   т. 8(3812)948-775, <a href="mailto:soft@soft-expert.su">soft@soft-expert.su</a></b>
+                    </div>
                 </div>
             </div>
         </div>
