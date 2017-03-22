@@ -1,8 +1,10 @@
 <?php session_start();
     if (isset($_SESSION['username'])) {
         $partner_url = 'partner.php';
+        $partner_modal = '#';
     } else {
-        $partner_url =  '#myModal" data-toggle="modal';
+        $partner_url =  '#myModal';
+        $partner_modal = 'modal';
     }
 ?>
 <!DOCTYPE html>
@@ -53,7 +55,7 @@
                         <li><a href="#" onclick='$("div.chapter-price").scrollToMe(-50)'>Цены</a></li>
                         <li><a href="#" onclick='$("div.chapter-soft").scrollToMe()'>Продажа ПО</a></li>
                         <!--<li><a href="partner.html">Партнерам</a></li>-->
-                        <li><a href="<?= htmlspecialchars($partner_url); ?>">Партнерам</a></li>
+                        <li><a href="<?= htmlspecialchars($partner_url); ?>" data-toggle="<?= $partner_modal; ?>">Партнерам</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">

@@ -6,7 +6,7 @@
     }
     $login = $_POST["login"];
     $password = $_POST["password"];
-    $result = $mysqli->query("SELECT description FROM `login` WHERE login='addslashes($login)' AND password='addslashes($password)'");
+    $result = $mysqli->query("SELECT description FROM `login` WHERE login='".addslashes($login)."' AND password='".addslashes($password)."'");
     if ($result->num_rows === 0) {
         header('location:index.php');
 
